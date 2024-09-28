@@ -21,8 +21,11 @@ void rush(int x, int y)
 			{
 				write(1, "*", 1); //print "*" for the entire first row
 			}
-
-			write(1, "\\", 1); //print closing symbol for first row
+			
+			if (x>1)
+			{
+				write(1, "\\", 1); //print closing symbol for first row
+			}
 		}
 		
 		else if (i == y-1) //if its the last row for y axis
@@ -59,5 +62,5 @@ void rush(int x, int y)
 
 int main(void)
 {
-	rush(5,4);
+	rush(4,4);
 	return (0);}
